@@ -1,12 +1,15 @@
-﻿using System;
+﻿using Raven.Client;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Ravenhome.Services
+namespace Ravenhome.Service.Services
 {
-    interface IRavenDBService
+    public interface IRavenDBService
     {
         Task Init();
+
+        IDocumentSession GetSession();
     }
 }

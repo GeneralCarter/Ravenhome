@@ -11,7 +11,9 @@
   "dependencies": {
     "Ravenhome": "1.0.0-*",
     "xunit": "2.1.0",
-    "xunit.runner.dnx": "2.1.0-rc1-build204"
+    "xunit.runner.dnx": "2.1.0-rc1-build204",
+    "RavenDB.Embedded": "3.0.30000",
+    "Moq.AutoMock": "0.4.0"
   },
   "commands": {
     "test": "xunit.runner.dnx"

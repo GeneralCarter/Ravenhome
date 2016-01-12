@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Ravenhome.Services;
+using Ravenhome.Service.Services;
 using Xunit;
 
 namespace Ravenhome.Test.Services
@@ -28,11 +28,10 @@ namespace Ravenhome.Test.Services
         public void GetSession()
         {
             _ravenDBService.Init();
-            using (var session = _ravenDBService.getSession())
+            using (var session = _ravenDBService.GetSession())
             {
                 Assert.NotNull(session);
             }
         }
-
     }
 }
